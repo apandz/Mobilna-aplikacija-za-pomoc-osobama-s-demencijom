@@ -1,0 +1,103 @@
+{
+    "indexes": [
+      {
+        "collectionGroup": "categories",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "color",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "name",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "subcategories",
+            "arrayConfig": "CONTAINS"
+          }
+        ]
+      },
+      {
+        "collectionGroup": "items",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "name",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "expirationDate",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "quantity",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "size",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "notes",
+            "order": "ASCENDING"
+          }
+        ]
+      },
+      {
+        "collectionGroup": "notification",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "cancel",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "sent",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "scheduledTime",
+            "order": "ASCENDING"
+          }
+        ]
+      },
+      {
+        "collectionGroup": "subcategories",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "color",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "name",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "defaultSubcategory",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "items",
+            "arrayConfig": "CONTAINS"
+          }
+        ]
+      },
+      {
+        "collectionGroup": "users",
+        "queryScope": "COLLECTION",
+        "fields": [
+          {
+            "fieldPath": "token",
+            "order": "ASCENDING"
+          },
+          {
+            "fieldPath": "categories",
+            "arrayConfig": "CONTAINS"
+          }
+        ]
+      }
+    ],
+    "fieldOverrides": []
+  }
